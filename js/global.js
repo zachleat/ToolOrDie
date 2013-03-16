@@ -1,4 +1,6 @@
-;(function() {
+;(function( w ) {
+	"use strict";
+
 	if( !("getElementsByClassName" in document) || ( window.blackberry && !window.WebKitPoint ) ) {
 		return;
 	}
@@ -15,7 +17,7 @@
 	});
 
 	// Google Web Fonts
-	WebFontConfig = {
+	w.WebFontConfig = {
 		google: { families: [ 'Bitter:400,700:latin' ] }
 	};
 	var wf = document.createElement('script');
@@ -26,4 +28,4 @@
 	var s = document.getElementsByTagName('script')[0];
 	s.parentNode.insertBefore(wf, s);
 
-})();
+})( window );
