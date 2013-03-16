@@ -128,7 +128,7 @@
 @media (min-width: 31em) {
 	.slide .next {
 		margin-bottom: 0;
-		position: absolute;
+		position: fixed;
 		bottom: .2em;
 		right: .2em;
 	}
