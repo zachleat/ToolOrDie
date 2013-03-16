@@ -5,36 +5,39 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
+	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	// Project configuration.
 	grunt.initConfig({
 		concat: {
 			jsdist: {
 				src: ['js/global.js'],
-				dest: 'js/toolordie.js'
+				dest: 'dist/toolordie.js'
 			},
 			cssdist: {
 				src: ['css/global.css'],
-				dest: 'css/toolordie.css'
+				dest: 'dist/toolordie.css'
 			}
 		},
 		uglify: {
 			my_target: {
 				files: {
-					'js/toolordie.min.js': ['js/toolordie.js']
+					'dist/toolordie.min.js': ['dist/toolordie.js']
 				}
 			}
 		},
 		cssmin: {
 			compress: {
 				files: {
-					'css/toolordie.min.css': ['css/toolordie.css']
+					'dist/toolordie.min.css': ['dist/toolordie.css']
 				}
 			}
 		},
 		watch: {
-			files: ['js/*, css/*'],
-			tasks: 'lint concat'
+			dist: {
+				files: ['js/*.js', 'css/*.js'],
+				tasks: ['default']
+			}
 		},
 		jshint: {
 			options: {
@@ -51,8 +54,7 @@ module.exports = function(grunt) {
 				browser: true
 			},
 			globals: {}
-		},
-		uglify: {}
+		}
 	});
 
 	// Default task.

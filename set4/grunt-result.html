@@ -13,16 +13,27 @@
 			</header>
 
 			<nav role="navigation">
-				<a class="next" href="grunt-result.html">Next</a>
+				<a class="next" href="grunt2.html">Next</a>
 			</nav>
 
 			<main role="main">
-				<ul>
-					<li><code>grunt init:gruntfile</code></li>
-					<li><code>npm init</code> generates your <code>package.json</code></li>
-					<li>Modify <code>Gruntfile.js</code> and add packages/config for <strong>Concatenation</strong> (CSS/JS), <strong>Uglify</strong> (JS Minifcation), <strong>CSSMin</strong>, <strong>grunticon</strong> (SVG icons with PNG fallback), <strong>SVGO</strong> (SVG Optimization)</li>
-					<li>Run <code>grunt</code></li>
-				</ul>
+				<pre><code>$ grunt
+Running "jshint:globals" (jshint) task
+>> 0 files lint free.
+
+Running "concat:jsdist" (concat) task
+File "dist/toolordie.js" created.
+
+Running "concat:cssdist" (concat) task
+File "dist/toolordie.css" created.
+
+Running "cssmin:compress" (cssmin) task
+File dist/toolordie.min.css created.
+
+Running "uglify:my_target" (uglify) task
+File "dist/toolordie.min.js" created.
+Uncompressed size: 792 bytes.
+Compressed size: 398 bytes gzipped (590 bytes minified).</code></pre>
 			</main>
 
 			<!--<aside class="links">
