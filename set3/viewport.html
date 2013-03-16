@@ -3,23 +3,27 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="/css/global.css">
+		<meta name="viewport" content="width=device-width">
 		<title>Tool or Die, a Web Developer’s Workflow</title>
 	</head>
 	<body>
 		<div class="slide">
 			<header>
-				<h1>CSS.</h1>
+				<h1>Let’s add a Viewport</h1>
 			</header>
 
 			<nav role="navigation">
-				<a class="next" href="mobile.html">Next Slide</a>
+				<a class="next" href="color.html">Next Slide</a>
 			</nav>
 
 			<main role="main">
-				<ul>
-					<li>Oh wow, that <code>sans-serif</code> font is looking so much better. <code>&lt;/sarcasm&gt;</code><sup><a href="#sans-serif">[1]</a></sup></li>
-					<li>Actually, it’s now using Responsive Web Design.</li>
-				</ul>
+				<p>Better.</p>
+				<h3>HTML</h3>
+				<pre><code>&lt;meta name="viewport" content="width=device-width" /&gt;</code></pre>
+				<h3>CSS</h3>
+				<pre><code>@-ms-viewport { width: device-width; }
+@-o-viewport { width: device-width; }
+@viewport { width: device-width; }</code></pre>
 			</main>
 
 			<aside class="links">
