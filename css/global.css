@@ -46,11 +46,19 @@ iframe.caniuse {
 .slide h2,
 .slide h3,
 .slide h4,
-.slide h5,
-.slide pre {
+.slide h5 {
 	margin: .25em 0;
 }
+.slide li {
+	line-height: 1.8;
+}
 .slide pre {
+	line-height: 1.2;
+	-webkit-tab-size: 2;
+	-moz-tab-size: 2;
+	-o-tab-size: 2;
+	tab-size: 2;
+	margin: .5em 0;
 	white-space: -moz-pre-wrap;
 	white-space: -o-pre-wrap; /* Opera 7 */
 	word-wrap: break-word; /* IE 5.5+ */
