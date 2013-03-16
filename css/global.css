@@ -50,7 +50,7 @@
 
   .slide h1 {
     margin-top: 0;
-    font-family: Bitter, Helvetica Neue, Verdana, sans-serif;
+    font-family: Bitter, Georgia, serif;
   }
 
   .slide h2,
@@ -95,7 +95,7 @@
   }
 
   .slide .next {
-    font-family: Bitter, Helvetica Neue, Verdana, sans-serif;
+    font-family: Bitter, Georgia, serif;
     display: block;
     text-decoration: none;
     padding: .2em .4em;
